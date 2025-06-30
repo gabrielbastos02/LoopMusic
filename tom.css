@@ -165,6 +165,14 @@ header {
     color: #444A4D;
     text-transform: uppercase;
 }
+.imagem1{
+    max-width: 100%;
+    height: 75%;
+    width: 75%;
+    display: block;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
 
 .btn {
     margin-top: 1rem;
@@ -225,3 +233,399 @@ header {
     gap: 1.5rem;
 }
 
+
+/* estamos estilizando as caixas (pizzaira) */
+.containor .box {
+    padding: 5em;
+    /*  */
+    text-align: center;
+    /*  */
+    border: var(--border);
+    /*  */
+    background: var(--br-card);
+
+}
+
+
+.containor .box img {
+    height: 18rem;
+    border-radius: 100%;
+}
+
+.containor .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.containor .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.containor .box .price samp {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.containor .box:hover {
+    background: #fff;
+    transition: 0.8s;
+}
+
+.containor .box:hover>* {
+    color: black;
+}
+
+.containor {
+    display: grid;
+    /* Organiza */
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+}
+/* estilizando as box(as caixas) */
+.box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+
+/* estilizando os incons */
+.icons a i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    /* distancia dos conteudos/altura da linha */
+    font-size: 1.7rem;
+    border: var(--border);
+    color: #fff;
+    margin: 0.3rem;
+}
+
+.incons a i:hover {
+    background: var(--main-color);
+}
+
+.box .imagem {
+    padding: 2.5rem 0;
+}
+
+.box .imagem img {
+    height: 25rem;
+}
+
+.box .contente {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.box .contente .stars {
+    padding: 1.5rem;
+}
+
+.box .contente .stars i {
+    font-size: 1.9rem;
+    color: var(--main-color);
+}
+
+.box .contente .price {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.box .contente .price samp {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+}
+
+.contente h3 {
+    padding: 1rem;
+}
+
+
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.user {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+
+/* footer */
+.title-footer {
+    text-align: center;
+    /* Centraliza o texto */
+    text-transform: uppercase;
+    /* Converte o texto para letras maiúsculas */
+    font-size: 2rem;
+    /* Define o tamanho da fonte */
+    color: #fff;
+    /* Define a cor do texto como branco */
+    margin-bottom: 1.5rem;
+    /* Adiciona espaço abaixo do título */
+}
+
+.title-footer span {
+    color: var(--main-color);
+    /* Aplica a cor principal ao texto dentro do span */
+    text-transform: uppercase;
+    /* Converte o texto para letras maiúsculas */
+}
+
+.footer {
+    background: var(--bg);
+    /* Define a cor de fundo do rodapé */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 4rem 0;
+    /* Adiciona espaçamento interno vertical ao rodapé */
+}
+
+.footer .container {
+    display: flex;
+    /* Ativa o layout flexível */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem para a próxima linha */
+    justify-content: space-between;
+    /* Distribui os itens com espaço entre eles */
+    padding: 0 7%;
+    /* Adiciona espaçamento interno horizontal */
+}
+
+.content-1 {
+    flex: 1 1 25rem;
+    /* Define tamanho flexível com largura mínima de 25rem */
+    margin: 1rem;
+    /* Adiciona espaçamento ao redor do conteúdo */
+}
+
+.content-1 ul {
+    list-style: none;
+    /* Remove os marcadores de lista */
+    padding: 0;
+    /* Remove o espaçamento interno padrão */
+}
+
+.content-1 ul li {
+    margin-bottom: 1rem;
+    /* Adiciona espaçamento inferior entre os itens da lista */
+}
+
+.content-1 ul li a {
+    color: #ccc;
+    /* Define a cor do texto como cinza claro */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    font-size: 1.6rem;
+    /* Define o tamanho da fonte */
+    transition: color 0.3s;
+    /* Aplica uma transição suave na mudança de cor */
+}
+
+.content-1 ul li a:hover {
+    color: var(--main-color);
+    /* Altera a cor para a cor principal ao passar o mouse */
+}
+.social-links {
+    display: flex;
+    /* Ativa o layout flexível */
+    gap: 1rem;
+    /* Define o espaçamento entre os itens */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    margin-top: 1.5rem;
+    /* Adiciona espaço acima das redes sociais */
+}
+
+.social-links a {
+    color: #ccc;
+    /* Define a cor inicial dos ícones */
+    font-size: 3rem;
+    /* Define o tamanho dos ícones */
+    transition: color 0.3s;
+    /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.social-links a:hover {
+    color: var(--main-color);
+    /* Altera a cor para a cor principal ao passar o mouse */
+}
+
+.footer-bottom {
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 1rem 0;
+    /* Adiciona espaçamento interno vertical */
+    font-size: 1.6rem;
+    /* Define o tamanho da fonte */
+    border-top: var(--border);
+    /* Adiciona uma borda superior */
+    margin-top: 2rem;
+    /* Adiciona espaço acima do rodapé inferior */
+    color: #ccc;
+    /* Define a cor do texto como cinza claro */
+}
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .content {
+        min-width: auto;
+        padding: 2rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .ul-header {
+        gap: 10px;
+    }
+
+    .containor {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ul-header {
+        flex-direction: column;
+        align-items: center;
+        background: #111213;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .ul-header.active {
+        display: flex;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .Ícons {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .content h3 {
+        font-size: 4rem;
+    }
+
+    .content p {
+        font-size: 1.6rem;
+    }
+
+    .content-texto {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .containor {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h3 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 0.7rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    .ul-header li a {
+        font-size: 1.4rem;
+    }
+
+    .Ícons i {
+        font-size: 2rem;
+    }
+
+    .social-links a {
+        font-size: 2.5rem;
+    }
+
+    .footer-bottom {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .heading {
+      font-size: 2.5rem;
+    }
+  
+    .row .content h3 {
+      font-size: 2.2rem;
+    }
+  
+    .row .content p {
+      font-size: 1.4rem;
+    }
+  
+    .box h3 {
+      font-size: 1.8rem;
+    }
+  
+    .box .price {
+      font-size: 1.5rem;
+    }
+  }
